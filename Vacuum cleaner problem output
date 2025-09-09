@@ -1,0 +1,43 @@
+outputs:
+
+output 1:
+Initial state: {'A': 'clean', 'B': 'dirty'} Vacuum in room: B
+Cleaning room B
+Current state: {'A': 'clean', 'B': 'clean'} Vacuum in room: B
+All rooms are clean!
+
+output 2:
+Initial state: {'A': 'dirty', 'B': 'clean'} Vacuum in room: A
+Cleaning room A
+Current state: {'A': 'clean', 'B': 'clean'} Vacuum in room: A
+All rooms are clean!
+
+output 3:
+Initial state: {'A': 'dirty', 'B': 'clean'} Vacuum in room: B
+Moving from room B to room A
+Current state: {'A': 'dirty', 'B': 'clean'} Vacuum in room: A
+Cleaning room A
+Current state: {'A': 'clean', 'B': 'clean'} Vacuum in room: A
+All rooms are clean!
+
+output 4:
+Initial state: {'A': 'clean', 'B': 'clean'} Vacuum in room: A
+All rooms are clean!
+
+output 5:
+Initial state: {'A': 'clean', 'B': 'dirty'} Vacuum in room: A
+Moving from room A to room B
+Current state: {'A': 'clean', 'B': 'dirty'} Vacuum in room: B
+Cleaning room B
+Current state: {'A': 'clean', 'B': 'clean'} Vacuum in room: B
+All rooms are clean!
+
+output 6:
+Initial state: {'A': 'dirty', 'B': 'dirty'} Vacuum in room: B
+Cleaning room B
+Current state: {'A': 'dirty', 'B': 'clean'} Vacuum in room: B
+Moving from room B to room A
+Current state: {'A': 'dirty', 'B': 'clean'} Vacuum in room: A
+Cleaning room A
+Current state: {'A': 'clean', 'B': 'clean'} Vacuum in room: A
+All rooms are clean!
