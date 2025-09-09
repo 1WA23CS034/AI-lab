@@ -1,0 +1,57 @@
+
+  |   |  
+--+---+--
+  |   |  
+--+---+--
+  |   |  
+
+Player X (choose 1-9): 1
+
+X |   |  
+--+---+--
+  |   |  
+--+---+--
+  |   |  
+
+Player O (choose 1-9): 1
+please choose vaccant spot
+
+X |   |  
+--+---+--
+  |   |  
+--+---+--
+  |   |  
+
+Player O (choose 1-9): 2
+
+X | O |  
+--+---+--
+  |   |  
+--+---+--
+  |   |  
+
+Player X (choose 1-9): 4
+
+X | O |  
+--+---+--
+X |   |  
+--+---+--
+  |   |  
+
+Player O (choose 1-9): 5
+
+X | O |  
+--+---+--
+X | O |  
+--+---+--
+  |   |  
+
+Player X (choose 1-9): 7
+
+X | O |  
+--+---+--
+X | O |  
+--+---+--
+X |   |  
+
+Player X won
