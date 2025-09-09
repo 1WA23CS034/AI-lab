@@ -1,0 +1,48 @@
+import random
+
+class VacuumCleaner:
+    def __init__(self, location, rooms):
+        self.location = location
+        self.rooms = rooms
+
+    def clean(self):
+        if self.rooms[self.location] == 'dirty':
+            print(f"Cleaning room {self.location}")
+            self.rooms[self.location] = 'clean'
+        else:
+            print(f"Room {self.location} is already clean")
+
+    def move(self, new_location):
+        print(f"Moving from room {self.location} to room {new_location}")
+        self.location = new_location
+
+    def perceive(self):
+        return self.rooms[self.location]
+
+    def is_all_clean(self):
+        return all(status == 'clean' for status in self.rooms.values())
+
+
+rooms = {'A': random.choice(['clean', 'dirty']),
+         'B': random.choice(['clean', 'dirty'])}
+initial_location = random.choice(['A', 'B'])
+
+vacuum = VacuumCleaner(initial_location, rooms)
+
+print("Initial state:", rooms, "Vacuum in room:", vacuum.location)
+
+
+while not vacuum.is_all_clean():
+    current_room_status = vacuum.perceive()
+
+    if current_room_status == 'dirty':
+        vacuum.clean()
+    else:
+        if vacuum.location == 'A':
+            vacuum.move('B')
+        else:
+            vacuum.move('A')
+
+    print("Current state:", vacuum.rooms, "Vacuum in room:", vacuum.location)
+
+print("All rooms are clean!")
