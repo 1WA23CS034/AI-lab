@@ -1,0 +1,6 @@
+Derived: Weapon(T1)
+Derived: Hostile(A)
+Derived: Sells(Robert, T1, A)
+Derived: Criminal(Robert)
+Criminal(Robert) is TRUE by Forward Chaining.
+True
